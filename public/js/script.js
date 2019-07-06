@@ -8,7 +8,7 @@ const handleForm = (event) => {
 
   infoTag.innerText = 'Loading...';
 
-  fetch(`http://localhost:3000/weather?address=${location.value}`)
+  fetch(`/weather?address=${location.value}`)
     .then(response => response.json())
     .then((data) => {
       if(data.message) return infoTag.innerHTML = data.message;

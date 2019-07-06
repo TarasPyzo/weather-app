@@ -4,6 +4,7 @@ const hbs = require('hbs');
 
 const { geocode, forecast } = require('./utils.js');
 
+const port = process.env.PORT || 3000;
 const app = express();
 
 // setup views settings
@@ -50,6 +51,6 @@ app.get('*', (req, res) => {
   res.render('404.hbs');
 });
 
-app.listen(3000, () => {
-  console.log('Server is running http://localhost:3000');
+app.listen(port, () => {
+  console.log(`Server is running http://localhost:${port}`);
 });
