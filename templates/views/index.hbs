@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title>
+    <link rel="icon" ref="/img/icon.png" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main-content">
+        {{> header}}
+
+        <h1>Wheather App</h1>
+
+        <div class="weather-form">
+          <form onsubmit="handleForm(event)">
+            <input type="text" id="location" name="location" placeholder="Location" />
+            <button class="search-button">Search</button>
+          </form>
+        </div>
+
+        <div id="info-field"></div>
+      </div>
+
+      <div class="footer">Footer</div>
+    </div>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

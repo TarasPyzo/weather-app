@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+.header {
+  border-bottom: 1px solid blue;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  color: gray;
+}
+
+.menu {
+  text-align: right;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  background-color: gray;
+}
+
+.main-content h1 {
+  color: gray;
+  margin-left: 20px;
+}
+
+.weather-form {
+  margin-left: 20px;
+}
+
+#location {
+  padding: 5px;
+}
+
+.search-button {
+  background-color: gray;
+  color: white;
+  padding: 5px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  width: 750px;
+  height: 530px;
+}
+
+#info-field {
+  text-align: center;
+}
+
+.footer {
+  padding: 20px;
+  font-size: 16px;
+  text-align: center;
+  border-top: 1px solid blue;
+  color: gray;
+}
